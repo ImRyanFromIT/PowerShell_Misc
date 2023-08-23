@@ -6,3 +6,4 @@ $c = Get-Credential # Prompts for certificate management service account
 
 Enable-IISCentralCertProvider -CertStoreLocation $certStore -UserName $c.Username -Password $c.Password
 
+Write-Host "IIS Central Certificate Store has been configured."
