@@ -1,3 +1,8 @@
+# This script has three parts. 
+# The first deletes the default web site if it exists
+# The second configures the website and provisions domain.com and www.domain.com bindings
+# The third sets the anonymous authentication setting to use the application pool identity, which fixes quirk from IIS_AppPoolConfiguration.ps1  
+
 # Ensure the WebAdministration module is loaded
 Import-Module IISAdministration
 

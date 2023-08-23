@@ -1,3 +1,4 @@
+# This script configures the specified IIS Application Pool to use a domain account. This helps enable access to site data kept on different machine. 
 # Thanks to https://stackoverflow.com/a/48524821 
 
 Import-Module WebAdministration
