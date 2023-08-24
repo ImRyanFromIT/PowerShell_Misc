@@ -1,4 +1,5 @@
 # You'll also be prompted for the password for the certificate itself. 
+Import-Module IISAdministration
 
 $certStore = "\\gv-data01\Shares\WebShare\SSL Central Store" # Change to your certificate store path
 $c = Get-Credential # Prompts for certificate management service account
