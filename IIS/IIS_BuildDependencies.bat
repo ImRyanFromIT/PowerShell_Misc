@@ -12,3 +12,4 @@ echo ========================================================================
 echo Installing NodeJs
 choco install nodejs -y
 echo ========================================================================
+choco install git.install -y
