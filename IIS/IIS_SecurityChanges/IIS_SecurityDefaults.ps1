@@ -1,4 +1,3 @@
-
 # Came from recommendations below https://www.cisecurity.org/benchmark/microsoft_iis
 
 ##############################################################################################################
