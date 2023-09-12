@@ -13,4 +13,8 @@ Where-Object {
               
 Export-csv -Path \\192.168.5.100\RyanTemp\$((Get-Date).ToString('MM-dd-yyyy')).csv -NoTypeInformation #Exports log file dated
 
-Invoke-Expression -Command C:\RyanTemp\StaleComputers_Delete.ps1 #Calls delete script
+ForEach($dn in (Import-Csv -Path "\\192.168.5.100\RyanTemp\$((Get-Date).ToString('MM-dd-yyyy')).csv"))
+{
+    Remove-ADObject -Identity $dn.'DistinguishedName' -Recursive -Confirm:$false #Where DistinguishedName is the column header of the csv that holds the dn.
+    
+}
