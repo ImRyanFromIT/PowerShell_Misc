@@ -1,3 +1,4 @@
+import-module ExchangeOnlineManagement
 # connect-exchangeonline
 Measure-Command {
 # Fetch mailboxes with 'Bellacare' in the UPN
